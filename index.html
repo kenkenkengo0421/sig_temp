@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    
+    <style type="text/css">
+    table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    }
+    a {
+    text-decoration: none;
+    color: black;  
+    }
+    </style>
+  </head>
+        <body>
+            <main>
+                <pre>
+                    <code>
+
+温度〜信号へスケーリング変換
+
+<table border="1"><tr>
+  <th>信号の下限(mA,V)</th>
+  <th>信号の上限(mA,V)</th>
+  <th>温度の下限(℃)</th>
+  <th>温度の上限(℃)</th>
+</tr>
+
+<tr>
+    <td><input type="number" id="sigMin" value="4"></td>
+    <td><input type="number" id="sigMax" value="20"></td>
+    <td><input type="number" id="tempMin" value="0"></td>
+    <td><input type="number" id="tempMax" value="50.0"></td>
+    
+</tr>
+</table>
+
+<table border="1"><tr>
+    <th>温度(℃)</th>
+</tr>
+
+<tr>
+    <td><input type="number" id="currentTemp" value="25.5"></td>
+</tr>
+</table>
+
+<button id="sub_btn">出力</button>
+
+<table border="1"><tr>
+    <th>出力結果(mA,v)</th>
+</tr>
+
+<tr>
+    <td><span id="ans"></span></td>
+</tr>
+</table>
+                    </code>
+                </pre>
+                
+
+            </main>
+        <script type="module" src="main.js"></script>
+        </body>
+</html>
